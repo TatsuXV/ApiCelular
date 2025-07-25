@@ -1,4 +1,4 @@
-package com.api.Cadastro.de.Celulares.chip;
+package com.api.Cadastro.de.Celulares.Celular;
 
 import com.api.Cadastro.de.Celulares.Celular.model.CelularModel;
 import jakarta.persistence.*;
@@ -9,6 +9,7 @@ import lombok.NoArgsConstructor;
 import java.util.List;
 
 @Entity
+@Table(name = "tb_chip")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor

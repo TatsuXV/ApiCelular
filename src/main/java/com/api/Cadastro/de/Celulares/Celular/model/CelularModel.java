@@ -2,12 +2,13 @@ package com.api.Cadastro.de.Celulares.Celular.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
+import com.api.Cadastro.de.Celulares.Celular.ChipModel;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity
-@Table(name = "serviço")
+@Table(name = "serve")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -36,7 +37,7 @@ public class CelularModel {
     @ManyToOne
     @JoinColumn(name = "chip")
     @JsonIgnore
-    private String chip;
+    private ChipModel chip;
 
 
 
