@@ -1,0 +1,36 @@
+package com.api.Cadastro.de.Celulares.Celular.model;
+
+import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Entity
+@Table(name = "serviço")
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+
+public class CelularModel {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "ID")
+    private Long id;
+
+    @Column(name = "name")
+    private String name;
+
+    @Column(name = "model")
+    private String model;
+
+    @Column(name = "cor")
+    private String cor;
+
+    @Column(name = "img")
+    private String img;
+
+    @Column(name = "price")
+    private int price;
+
+
+}
