@@ -1,5 +1,6 @@
 package com.api.Cadastro.de.Celulares.Celular.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -31,6 +32,12 @@ public class CelularModel {
 
     @Column(name = "price")
     private int price;
+
+    @ManyToOne
+    @JoinColumn(name = "chip")
+    @JsonIgnore
+    private String chip;
+
 
 
 }
